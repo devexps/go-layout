@@ -6,6 +6,17 @@ VERSION=$(shell git describe --tags --always)
 API_PROTO_PATH=../api/proto
 API_PROTO_FILES=$(shell cd $(API_PROTO_PATH) && find . -name *.proto)
 
+# init env
+init:
+	@which micro &> /dev/null || go install github.com/devexps/go-micro/cmd/micro/v2@latest
+	@which protoc-gen-go-http &> /dev/null || go install github.com/devexps/go-micro/cmd/protoc-gen-go-http/v2@latest
+
+	@which protoc-gen-go &> /dev/null || go install google.golang.org/protobuf/cmd/protoc-gen-go@v1.30.0
+	@which protoc-gen-validate &> /dev/null || go install github.com/envoyproxy/protoc-gen-validate@v1.0.0
+	@which protoc-gen-go-grpc &> /dev/null || go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@latest
+	@which protoc-gen-openapi &> /dev/null || go install github.com/google/gnostic/cmd/protoc-gen-openapi@latest
+	@which wire &> /dev/null || go install github.com/google/wire/cmd/wire@latest
+
 # generate api proto
 proto:
 	@cd $(API_PROTO_PATH) && \
@@ -23,10 +34,11 @@ generate:
 	@go mod tidy
 	@go generate ./...
 
-# generate all
+# init and generate all
 all:
-	@make proto;
-	@make generate;
+	@make init
+	@make proto
+	@make generate
 
 # run tests
 test:

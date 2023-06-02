@@ -3,7 +3,7 @@ module your_go_micro_api
 go 1.18
 
 require (
-	github.com/devexps/go-micro/v2 v2.0.0-20230601084602-873929904a59
+	github.com/devexps/go-micro/v2 v2.0.0-20230602032512-647679beb0c1
 	google.golang.org/genproto/googleapis/api v0.0.0-20230530153820-e85fd2cbaebc
 	google.golang.org/grpc v1.55.0
 	google.golang.org/protobuf v1.30.0

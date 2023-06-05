@@ -1,17 +1,17 @@
-module your_go_helloworld_service
+module your_project/helloworld
 
 go 1.18
 
 replace (
-	your_go_micro_api => ../api
-	your_go_micro_pkg => ../pkg
+	your_project/api => ../api
+	your_project/pkg => ../pkg
 )
 
 require (
 	github.com/devexps/go-micro/v2 v2.0.0-20230602032512-647679beb0c1
 	github.com/google/wire v0.5.0
-	your_go_micro_api v0.0.0-00010101000000-000000000000
-	your_go_micro_pkg v0.0.0-00010101000000-000000000000
+	your_project/api v0.0.0-00010101000000-000000000000
+	your_project/pkg v0.0.0-00010101000000-000000000000
 )
 
 require (

@@ -12,7 +12,7 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/protobuf/types/known/durationpb"
 	"time"
-	"your_go_micro_api/gen/go/common/conf"
+	"your_project/api/gen/go/common/conf"
 )
 
 const defaultTimeout = 5 * time.Second

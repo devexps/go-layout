@@ -1,7 +1,7 @@
 syntax = "proto3";
 
 package common.conf;
-option go_package = "your_go_micro_api/api/gen/go/common/conf;conf";
+option go_package = "your_project/api/gen/go/common/conf;conf";
 
 message Auth {
   string service_key = 1;

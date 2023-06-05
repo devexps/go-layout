@@ -4,10 +4,10 @@ import (
 	"github.com/devexps/go-micro/v2/log"
 	"github.com/devexps/go-micro/v2/middleware/logging"
 	"github.com/devexps/go-micro/v2/transport/grpc"
-	"your_go_helloworld_service/internal/service"
-	"your_go_micro_api/gen/go/common/conf"
-	v1 "your_go_micro_api/gen/go/helloworld/v1"
-	"your_go_micro_pkg/bootstrap"
+	"your_project/api/gen/go/common/conf"
+	v1 "your_project/api/gen/go/helloworld/v1"
+	"your_project/helloworld/internal/service"
+	"your_project/pkg/bootstrap"
 )
 
 // NewGRPCServer new a gRPC server.

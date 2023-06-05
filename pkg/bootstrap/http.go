@@ -7,7 +7,7 @@ import (
 	"github.com/devexps/go-micro/v2/middleware/tracing"
 	microHttp "github.com/devexps/go-micro/v2/transport/http"
 	"github.com/gorilla/handlers"
-	"your_go_micro_api/gen/go/common/conf"
+	"your_project/api/gen/go/common/conf"
 )
 
 // CreateHttpServer creates a HTTP server

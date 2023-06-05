@@ -3,7 +3,7 @@ package bootstrap
 import (
 	"github.com/devexps/go-micro/v2/log"
 	"github.com/devexps/go-micro/v2/registry"
-	"your_go_micro_api/gen/go/common/conf"
+	"your_project/api/gen/go/common/conf"
 
 	// consul
 	consulMicro "github.com/devexps/go-micro/plugins/registry/consul/v2"

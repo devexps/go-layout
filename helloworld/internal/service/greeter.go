@@ -2,9 +2,9 @@ package service
 
 import (
 	"context"
-	"your_go_helloworld_service/internal/biz"
-	"your_go_helloworld_service/internal/data"
-	v1 "your_go_micro_api/gen/go/helloworld/v1"
+	v1 "your_project/api/gen/go/helloworld/v1"
+	"your_project/helloworld/internal/biz"
+	"your_project/helloworld/internal/data"
 )
 
 type GreeterService interface {

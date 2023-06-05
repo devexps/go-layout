@@ -2,7 +2,7 @@ package data
 
 import (
 	"github.com/devexps/go-micro/v2/log"
-	"your_go_micro_api/gen/go/common/conf"
+	"your_project/api/gen/go/common/conf"
 )
 
 // Data .

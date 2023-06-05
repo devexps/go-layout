@@ -3,7 +3,7 @@ package bootstrap
 import (
 	"github.com/devexps/go-micro/v2/config"
 	"github.com/devexps/go-micro/v2/config/file"
-	"your_go_micro_api/gen/go/common/conf"
+	"your_project/api/gen/go/common/conf"
 )
 
 type ConfigType string

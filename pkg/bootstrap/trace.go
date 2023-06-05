@@ -9,7 +9,7 @@ import (
 	semConv "go.opentelemetry.io/otel/semconv/v1.4.0"
 	"net"
 	"strings"
-	"your_go_micro_api/gen/go/common/conf"
+	"your_project/api/gen/go/common/conf"
 
 	"go.opentelemetry.io/otel/exporters/jaeger"
 	"go.opentelemetry.io/otel/exporters/zipkin"

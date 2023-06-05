@@ -1,4 +1,4 @@
-module your_go_micro_api
+module your_project/api
 
 go 1.18
 

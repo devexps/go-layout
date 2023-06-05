@@ -6,8 +6,8 @@ import (
 	"github.com/devexps/go-micro/v2/registry"
 	"github.com/devexps/go-micro/v2/transport/grpc"
 	"github.com/devexps/go-micro/v2/transport/http"
-	"your_go_micro_pkg/bootstrap"
-	"your_go_micro_pkg/service"
+	"your_project/pkg/bootstrap"
+	"your_project/pkg/service"
 )
 
 // go build -ldflags "-X main.Version=x.y.z"

@@ -1,8 +1,8 @@
-module your_go_micro_pkg
+module your_project/pkg
 
 go 1.18
 
-replace your_go_micro_api => ../api
+replace your_project/api => ../api
 
 require (
 	github.com/devexps/go-micro/plugins/registry/consul/v2 v2.0.0-20230602032512-647679beb0c1
@@ -17,7 +17,7 @@ require (
 	go.opentelemetry.io/otel/sdk v1.13.0
 	google.golang.org/grpc v1.55.0
 	google.golang.org/protobuf v1.30.0
-	your_go_micro_api v0.0.0-00010101000000-000000000000
+	your_project/api v0.0.0-00010101000000-000000000000
 )
 
 require (

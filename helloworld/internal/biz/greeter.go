@@ -3,7 +3,7 @@ package biz
 import (
 	"context"
 	"github.com/devexps/go-micro/v2/log"
-	"your_go_helloworld_service/internal/data"
+	"your_project/helloworld/internal/data"
 )
 
 // GreeterUseCase is a Greater use case interface.

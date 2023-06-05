@@ -4,7 +4,7 @@ import (
 	"github.com/devexps/go-micro/v2/log"
 	"github.com/devexps/go-micro/v2/middleware/tracing"
 	"os"
-	"your_go_micro_api/gen/go/common/conf"
+	"your_project/api/gen/go/common/conf"
 )
 
 type LoggerType string

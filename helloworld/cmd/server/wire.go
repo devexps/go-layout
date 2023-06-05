@@ -10,11 +10,11 @@ import (
 	"github.com/devexps/go-micro/v2/log"
 	"github.com/devexps/go-micro/v2/registry"
 	"github.com/google/wire"
-	"your_go_helloworld_service/internal/biz"
-	"your_go_helloworld_service/internal/data"
-	"your_go_helloworld_service/internal/server"
-	"your_go_helloworld_service/internal/service"
-	"your_go_micro_api/gen/go/common/conf"
+	"your_project/api/gen/go/common/conf"
+	"your_project/helloworld/internal/biz"
+	"your_project/helloworld/internal/data"
+	"your_project/helloworld/internal/server"
+	"your_project/helloworld/internal/service"
 )
 
 // initApp init micro application.

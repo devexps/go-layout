@@ -5,9 +5,9 @@ go 1.18
 replace your_project/api => ../api
 
 require (
-	github.com/devexps/go-micro/plugins/registry/consul/v2 v2.0.0-20230602032512-647679beb0c1
-	github.com/devexps/go-micro/plugins/registry/etcd/v2 v2.0.0-20230602032512-647679beb0c1
-	github.com/devexps/go-micro/v2 v2.0.0-20230602032512-647679beb0c1
+	github.com/devexps/go-micro/registry/consul/v2 v2.0.0-20230606081522-4850a686c7ab
+	github.com/devexps/go-micro/registry/etcd/v2 v2.0.0-20230606081522-4850a686c7ab
+	github.com/devexps/go-micro/v2 v2.0.0-20230606081522-4850a686c7ab
 	github.com/gorilla/handlers v1.5.1
 	github.com/hashicorp/consul/api v1.20.0
 	go.etcd.io/etcd/client/v3 v3.5.8

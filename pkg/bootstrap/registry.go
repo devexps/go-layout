@@ -6,11 +6,11 @@ import (
 	"your_project/api/gen/go/common/conf"
 
 	// consul
-	consulMicro "github.com/devexps/go-micro/plugins/registry/consul/v2"
+	consulMicro "github.com/devexps/go-micro/registry/consul/v2"
 	consulClient "github.com/hashicorp/consul/api"
 
 	// etcd
-	etcdMicro "github.com/devexps/go-micro/plugins/registry/etcd/v2"
+	etcdMicro "github.com/devexps/go-micro/registry/etcd/v2"
 	etcdClient "go.etcd.io/etcd/client/v3"
 )
 

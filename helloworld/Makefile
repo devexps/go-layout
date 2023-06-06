@@ -3,6 +3,9 @@
 GOPATH:=$(shell go env GOPATH)
 VERSION=$(shell git describe --tags --always)
 
+SERVICE_RELATIVE_PATH=$(shell a=`basename $$PWD` && echo $$a)
+SERVICE_DOCKER_IMAGE=$(shell a=`basename $$PWD` && cd .. && b=`basename $$PWD` && echo "$$b/$$a:0.1.0")
+
 API_PROTO_PATH=../api/proto
 API_PROTO_FILES=$(shell cd $(API_PROTO_PATH) && find . -name *.proto)
 
@@ -63,6 +66,22 @@ app: proto generate build
 # run debug application
 run:
 	@go run ./cmd/server -conf ./configs
+
+# build docker image
+docker:
+	@docker build \
+		-t $(SERVICE_DOCKER_IMAGE) \
+    	-f ../.docker/Dockerfile \
+    	--build-arg SERVICE_RELATIVE_PATH=$(SERVICE_RELATIVE_PATH) \
+    	--build-arg GRPC_PORT=9090 \
+    	--build-arg HTTP_PORT=8080 \
+    	..
+
+# run debug docker
+docker-run:
+	@docker run --rm -p 8080:8080 -p 9090:9090 \
+		-v ${PWD}/../$(SERVICE_RELATIVE_PATH)/configs:/data/conf \
+		$(SERVICE_DOCKER_IMAGE)
 
 # show help
 help:

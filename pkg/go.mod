@@ -5,9 +5,9 @@ go 1.18
 replace your_project/api => ../api
 
 require (
-	github.com/devexps/go-micro/registry/consul/v2 v2.0.0-20230726030419-a409cedfff75
-	github.com/devexps/go-micro/registry/etcd/v2 v2.0.0-20230726030419-a409cedfff75
-	github.com/devexps/go-micro/v2 v2.0.0-20230726030419-a409cedfff75
+	github.com/devexps/go-micro/registry/consul/v2 v2.0.0-20230905124121-099b6ff4fe76
+	github.com/devexps/go-micro/registry/etcd/v2 v2.0.0-20230905124121-099b6ff4fe76
+	github.com/devexps/go-micro/v2 v2.0.0-20230905124121-099b6ff4fe76
 	github.com/gorilla/handlers v1.5.1
 	github.com/hashicorp/consul/api v1.20.0
 	go.etcd.io/etcd/client/v3 v3.5.8
@@ -24,6 +24,7 @@ require (
 	github.com/armon/go-metrics v0.0.0-20180917152333-f0300d1749da // indirect
 	github.com/coreos/go-semver v0.3.0 // indirect
 	github.com/coreos/go-systemd/v22 v22.3.2 // indirect
+	github.com/devexps/go-pkg/v2 v2.0.0-20230830041653-2d2203e98e28 // indirect
 	github.com/fatih/color v1.9.0 // indirect
 	github.com/felixge/httpsnoop v1.0.1 // indirect
 	github.com/fsnotify/fsnotify v1.5.4 // indirect
@@ -54,7 +55,7 @@ require (
 	go.uber.org/zap v1.17.0 // indirect
 	golang.org/x/net v0.8.0 // indirect
 	golang.org/x/sync v0.0.0-20220513210516-0976fa681c29 // indirect
-	golang.org/x/sys v0.7.0 // indirect
+	golang.org/x/sys v0.10.0 // indirect
 	golang.org/x/text v0.8.0 // indirect
 	google.golang.org/genproto v0.0.0-20230525234025-438c736192d0 // indirect
 	google.golang.org/genproto/googleapis/api v0.0.0-20230530153820-e85fd2cbaebc // indirect
